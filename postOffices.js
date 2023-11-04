@@ -4,6 +4,7 @@ const mapContainer = document.querySelector(".map");
 const cardContainer = document.querySelector(".card-section");
 const search = document.getElementById("search")
 
+const loader = document.querySelector(".loader"); 
 const loaderSection = document.querySelector(".loaderSection"); 
 const main = document.querySelector(".main") ;
 
@@ -21,7 +22,8 @@ async function fetchAPI(ip){
     await fetchPostalApi(data.postal);
     renderData(data);
     renderMap(locationData.lat, locationData.lng); 
-    loaderSection.style = "dispaly:none";
+    loader.style.display="none"
+    loaderSection.style.display = "none";
     main.style = "display:block";
 
 } 
