@@ -1,0 +1,155 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+    color: #5C5E66;
+    font-size: 20px;
+}
+
+.userLocation{
+    padding: 10px;
+    width: 100%;
+    /* border: white solid 1px; */
+}
+
+table{
+    width:100vw;
+    margin: auto;
+}
+
+td{
+    padding-inline: 80px;
+    padding-block:5px ;
+}
+.map-Section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 30px;
+    background-color:#575A85;
+    color: #B8BCCC;
+    padding: 10px;
+}
+
+
+iframe{
+    width: 80vw;
+    height: 40vh;
+}
+
+
+span{
+    color: white;
+}
+
+.more-info{
+    padding: 10px;
+}
+
+.more-info>h2{
+    text-align: center;
+}
+
+.more-info>p{
+    margin: 10px;
+}
+
+
+.postOffice-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    background-color: #575A85;
+    border-radius: 10px;
+    color: #B8BCCC;
+    width:40vw;
+    padding: 10px;
+    margin: 20px;
+    
+}
+
+.card>p{
+    padding: 5px;
+}
+
+
+.search-section{
+    border-radius: 5px;
+    border: #575A85 solid 1px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 90%;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+.main{
+    display: none;
+}
+
+.loaderSection{
+    background-color: rgb(0, 0, 0,0.1);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(170, 170, 170);
+    border-top: 5px solid rgb(126, 126, 159);
+    animation: load 1.5s linear infinite;
+}
+
+@keyframes load{
+    0%{
+        transform: (0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .index-main-page{
+        background-attachment: blue;
+        flex-direction: column;
+    }
+    
+}
+
+
